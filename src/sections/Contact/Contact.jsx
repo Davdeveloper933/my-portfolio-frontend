@@ -60,7 +60,7 @@ const Contact = () => {
             Email
           </label>
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             placeholder="Email"
