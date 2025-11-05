@@ -21,7 +21,7 @@ const Contact = () => {
     setStatus("Sending...");
     try {
       const response = await fetch(
-        "https://my-portfolio-backend-git-main-davdeveloper933s-projects.vercel.app/send-email",
+        "https://my-portfolio-backend-roan.vercel.app/send-email",
         {
           method: "POST",
           headers: {
