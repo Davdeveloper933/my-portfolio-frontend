@@ -21,7 +21,7 @@ const Contact = () => {
     setStatus("Sending...");
     try {
       const response = await fetch(
-        "https://my-portfolio-backend-hgvx.onrender.com/send-email",
+        "https://my-portfolio-backend-czmu058nj-davdeveloper933s-projects.vercel.app/send-email",
         {
           method: "POST",
           headers: {
