@@ -4,6 +4,8 @@ import { useState } from "react";
 const { container } = styles;
 
 const Contact = () => {
+  const backendUrl = "https://my-portfolio-backend-roan.vercel.app/send-email"
+  const localBackendUrl = "http://localhost:5000/send-email"
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,7 +23,7 @@ const Contact = () => {
     setStatus("Sending...");
     try {
       const response = await fetch(
-        "https://my-portfolio-backend-roan.vercel.app/send-email",
+          backendUrl,
         {
           method: "POST",
           headers: {

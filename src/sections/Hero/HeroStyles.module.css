@@ -10,7 +10,10 @@
 
 .hero {
   max-width: 200px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 span {
@@ -84,6 +87,7 @@ button:active {
     .hero {
       max-width: 350px;
       width: 350px;
+      height: 350px;
     }
   }
 }
@@ -93,6 +97,7 @@ button:active {
     .hero {
       max-width: 400px;
       width: 400px;
+      height: 400px;
     }
   }
 }

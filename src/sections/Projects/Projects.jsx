@@ -1,9 +1,6 @@
 import styles from "./ProjectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
+import cvNestLogo from "../../assets/cvnest-logo.png";
 
 const { container, projectsContainer } = styles;
 
@@ -13,28 +10,10 @@ const Projects = () => {
       <h1 className="sectionTitle">Projects</h1>
       <div className={projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
-        />
-        <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
-        />
-        <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fitlift"
-          p="Fitness App"
+          src={cvNestLogo}
+          link="https://github.com/Davdeveloper933/cv-builder"
+          h3="CVnest"
+          p="Resume Builder App"
         />
       </div>
     </section>

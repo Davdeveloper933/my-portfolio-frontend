@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/sinica.jpg";
+import heroImg from "../../assets/avatar-github.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterDark from "../../assets/twitter-dark.svg";
@@ -11,7 +11,7 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
-const { colorModeContainer, hero, info, colorMode, container } = styles;
+const { colorModeContainer, hero, info, colorMode, container,description } = styles;
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -34,7 +34,7 @@ function Hero() {
       </div>
       <div className={info}>
         <h1>
-          Си <br /> Ницца
+          David <br /> Istomin
         </h1>
         <h2>Frontend Developer</h2>
         <span>
@@ -48,7 +48,7 @@ function Hero() {
             <img src={linkedinIcon} alt="Twitter icon" />
           </a>
         </span>
-        <p>Я ВАС ВСЕХ ОТМУДОХАЮ!</p>
+        <p className={description}>With a passion for developing modern web apps for commercial businesses.</p>
         <a href={CV} download>
           <button className="hover">Get CV</button>
         </a>
