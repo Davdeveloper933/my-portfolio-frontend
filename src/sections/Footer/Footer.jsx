@@ -1,10 +1,11 @@
 import styles from "./FooterStyles.module.css";
+import {lastName,name} from "../../contstants.js";
 
 const Footer = () => {
   return (
     <section id="footer" className={styles.container}>
       <p>
-        &copy; 2024 Harris johnsen. <br />
+        &copy; {new Date().getFullYear()} {name} {lastName}. <br />
         All rights reserved
       </p>
     </section>

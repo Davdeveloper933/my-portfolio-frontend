@@ -1,6 +1,6 @@
 import styles from "./ProjectsStyles.module.css";
-import ProjectCard from "../../common/ProjectCard";
-import cvNestLogo from "../../assets/cvnest-logo.png";
+import ProjectCard from "../../common/ProjectCard/ProjectCard.jsx";
+import cvNestLogo from "../../assets/cv.png";
 
 const { container, projectsContainer } = styles;
 

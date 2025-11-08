@@ -10,6 +10,7 @@ import linkedinDark from "../../assets/linkedin-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
+import {lastName,name} from "../../contstants.js";
 
 const { colorModeContainer, hero, info, colorMode, container,description } = styles;
 
@@ -34,7 +35,7 @@ function Hero() {
       </div>
       <div className={info}>
         <h1>
-          David <br /> Istomin
+          {name} <br /> {lastName}
         </h1>
         <h2>Frontend Developer</h2>
         <span>
@@ -50,7 +51,7 @@ function Hero() {
         </span>
         <p className={description}>With a passion for developing modern web apps for commercial businesses.</p>
         <a href={CV} download>
-          <button className="hover">Get CV</button>
+          <button className="btn hover">Get CV</button>
         </a>
       </div>
     </section>
