@@ -6,6 +6,8 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --link-text-color: #3853e5;
+  --link-hover-text-color: #1531c8;
 }
 
 [data-theme="dark"] {
@@ -16,6 +18,8 @@
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --link-text-color: #e5d138;
+  --link-hover-text-color: #fff;
 }
 
 body {
