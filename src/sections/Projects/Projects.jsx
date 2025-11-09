@@ -2,6 +2,7 @@ import styles from "./ProjectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard/ProjectCard.jsx";
 import cvNestLogo from "../../assets/cvnest-logo.png";
 import rockScissersGameLogo from "../../assets/rock-scissers-game-logo.png"
+import websiteLogo from "../../assets/website.png";
 
 const { container, projectsContainer } = styles;
 
@@ -11,14 +12,14 @@ const Projects = () => {
       <h1 className="sectionTitle">Projects</h1>
       <div className={projectsContainer}>
         <ProjectCard
-          src={cvNestLogo}
+          src={websiteLogo}
           githublink="https://github.com/Davdeveloper933/cvnest"
           demolink="https://cvnest.vercel.app/"
           h3="CVnest"
           p="Resume Builder App"
         />
         <ProjectCard
-          src={rockScissersGameLogo}
+          src={websiteLogo}
           githublink="https://github.com/Davdeveloper933/rock-scissers-game"
           demolink="https://rock-scissers-game.vercel.app/"
           h3="Rock Scissers Paper"

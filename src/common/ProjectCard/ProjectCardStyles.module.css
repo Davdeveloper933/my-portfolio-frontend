@@ -8,11 +8,31 @@
 }
 
 a.projectCardLink {
-    color: #3c3cba;
+    color: var(--form-text-color);
     font-family: "Roboto Mono", monospace;
     transition: color 200ms ease-in-out, transform 200ms ease-in-out;
     font-weight: bold;
     &:hover {
         color: var(--text-color);
+    }
+}
+
+.projectCardLogo {
+    font-weight: bold;
+    font-family: "Roboto Mono", monospace;
+}
+
+.projectCardImgContainer {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--project-card-bg);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    padding:1rem;
+    min-height:200px;
+    transition: transform 200ms ease-in-out;
+    &:hover {
+        transform: scale(1.05);
     }
 }
