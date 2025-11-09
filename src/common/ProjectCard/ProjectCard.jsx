@@ -1,19 +1,19 @@
 import styles from "./ProjectCardStyles.module.css"
 
-const {projectCardButtonsContainer} = styles;
+const {projectCardButtonsContainer,projectCardLink,img} = styles;
 
-const ProjectCard = ({ link, src, h3, p }) => {
+const ProjectCard = ({ githublink,demolink, src, h3, p }) => {
   return (
     <div>
-      <img src={src} alt={`${h3} logo`} className="hover" />
+      <img src={src} alt={`${h3} logo`} className={img+" hover"} />
       <h3>{h3}</h3>
       <p>{p}</p>
       <div className={projectCardButtonsContainer}>
-          <a href = {link} target = "_blank">
-              <button className = "btn hover">Github</button>
+          <a className={projectCardLink} href = {githublink} target = "_blank">
+              Github
           </a>
-          <a href = {link} target = "_blank">
-              <button className = "btn hover">Demo</button>
+          <a className={projectCardLink} href = {demolink} target = "_blank">
+              Demo
           </a>
       </div>
     </div>

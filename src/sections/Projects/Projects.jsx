@@ -1,6 +1,7 @@
 import styles from "./ProjectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard/ProjectCard.jsx";
-import cvNestLogo from "../../assets/cv.png";
+import cvNestLogo from "../../assets/cvnest-logo.png";
+import rockScissersGameLogo from "../../assets/rock-scissers-game-logo.png"
 
 const { container, projectsContainer } = styles;
 
@@ -11,9 +12,17 @@ const Projects = () => {
       <div className={projectsContainer}>
         <ProjectCard
           src={cvNestLogo}
-          link="https://github.com/Davdeveloper933/cv-builder"
+          githublink="https://github.com/Davdeveloper933/cvnest"
+          demolink="https://cvnest.vercel.app/"
           h3="CVnest"
           p="Resume Builder App"
+        />
+        <ProjectCard
+          src={rockScissersGameLogo}
+          githublink="https://github.com/Davdeveloper933/rock-scissers-game"
+          demolink="https://rock-scissers-game.vercel.app/"
+          h3="Rock Scissers Paper"
+          p="Game made in JS"
         />
       </div>
     </section>
