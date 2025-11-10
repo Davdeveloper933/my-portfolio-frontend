@@ -18,7 +18,6 @@ const Skills = () => {
         <SkillList src={checkMarkIcon} skill="JavaScript" />
         <SkillList src={checkMarkIcon} skill="TypeScript" />
         <SkillList src={checkMarkIcon} skill="Node" />
-
       </div>
       <hr />
       <div className={skillList}>
@@ -30,6 +29,7 @@ const Skills = () => {
       </div>
       <hr />
       <div className={skillList}>
+        <SkillList src={checkMarkIcon} skill="Nuxt 3" />
         <SkillList src={checkMarkIcon} skill="RESTful API" />
         <SkillList src={checkMarkIcon} skill="Git" />
         <SkillList src={checkMarkIcon} skill="Copilot" />
